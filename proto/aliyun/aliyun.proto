@@ -3,8 +3,8 @@ syntax = "proto3";
 package aliyun;
 
 service Aliyun {
-    // 用户验证授权
-    rpc Request(Request) returns (Response) {}
+    // 处理请求
+    rpc ProcessCommonRequest(Request) returns (Response) {}
 }
 
 
