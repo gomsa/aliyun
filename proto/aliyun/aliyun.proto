@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package aliyun;
+
+service Aliyun {
+    // 用户验证授权
+    rpc Request(Request) returns (Response) {}
+}
+
+
+message Request{
+    string method = 1;
+    string scheme = 2;
+    string domain = 3;
+    string version = 5;
+    string api_name = 6;
+    map<string, string> query_params = 7;
+}
+
+message Response {
+}

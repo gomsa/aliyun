@@ -1,0 +1,21 @@
+stages:
+- name: Build
+  steps:
+  - runScriptConfig:
+      image: bigrocs/golang-gcc:1.12
+      shellScript: |-
+        mkdir -p /go/src/github.com/gomsa
+        ln -s `pwd` /go/src/github.com/gomsa/aliyun
+        cd /go/src/github.com/gomsa/aliyun
+        GO111MODULE=off
+        CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -o bin/service
+- name: Publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: aliyun:${CICD_EXECUTION_SEQUENCE}
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml

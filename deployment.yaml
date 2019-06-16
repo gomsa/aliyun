@@ -1,0 +1,66 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: aliyun
+  namespace: srv
+spec:
+  selector:
+    app: aliyun
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 8080
+      name: micro
+      targetPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aliyun
+  namespace: srv
+  labels:
+    app: aliyun
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aliyun
+  template:
+    metadata:
+      labels:
+        app: aliyun
+    spec:
+      imagePullSecrets:
+      - name: pipeline-docker-registry
+      containers:
+        - name: aliyun
+          image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+          imagePullPolicy: Always
+          command: [
+            "service",
+            "--selector=static",
+            "--server_address=:8080",
+          ]
+          env:
+            - name: ACCESS_KEY_ID
+              value: "4RpKymtlXbizEQ8rOzHM3YybOrQuLya"
+            - name: ACCESS_KEY_SECRET
+              value: "aliyun-mariadb-mariadb"
+          ports:
+          - containerPort: 8080
+            name: micro
+            protocol: TCP
+        - name: health
+          image: microhq/health:kubernetes
+          command: [
+            "/health",
+            "--health_address=0.0.0.0:8081",
+            "--server_name=aliyun",
+            "--server_address=0.0.0.0:8080"
+          ]
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8081
+            initialDelaySeconds: 3
+            periodSeconds: 3
