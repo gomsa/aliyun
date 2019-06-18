@@ -1,5 +1,4 @@
 # aliyun 阿里云统一服务
-## dyvmsapi.aliyuncs.com
 ### 微服务内核访问演示
 ```
 {
