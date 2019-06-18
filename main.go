@@ -2,13 +2,13 @@ package main
 
 import (
 	// 公共引入
-	"github.com/micro/go-log"
 	micro "github.com/micro/go-micro"
+	"github.com/micro/go-micro/util/log"
 	k8s "github.com/micro/kubernetes/go/micro"
 
-
+	"github.com/gomsa/tools/env"
+	"github.com/gomsa/aliyun/hander"
 	pb "github.com/gomsa/aliyun/proto/aliyun"
-
 )
 
 func main() {
@@ -20,8 +20,9 @@ func main() {
 
 	// 用户服务实现
 	pb.RegisterAliyunHandler(srv.Server(), &hander.Aliyun{
-		AccessKeyId:ACCESS_KEY_ID,
-		AccessKeySecret:ACCESS_KEY_SECRET,
+		RegionId:     	 env.Getenv("REGION_ID","default"),
+		AccessKeyId:     env.Getenv("ACCESS_KEY_ID",""),
+		AccessKeySecret: env.Getenv("ACCESS_KEY_SECRET",""),
 	})
 
 	// Run the server

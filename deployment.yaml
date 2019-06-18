@@ -1,3 +1,11 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: aliyun
+data:
+  access-key-id: TFRBSWRzS1RrbXpySVY1Uw==
+  access-key-secret: aHNXRlhYTzdpWnlzcktWSnRvTXp5UmFhRU5RYzJ3
+---
 kind: Service
 apiVersion: v1
 metadata:
@@ -42,10 +50,18 @@ spec:
             "--server_address=:8080",
           ]
           env:
+            - name: REGION_ID
+              value: default
             - name: ACCESS_KEY_ID
-              value: "4RpKymtlXbizEQ8rOzHM3YybOrQuLya"
+              valueFrom:
+                secretKeyRef:
+                  key: access-key-id
+                  name: aliyun
             - name: ACCESS_KEY_SECRET
-              value: "aliyun-mariadb-mariadb"
+              valueFrom:
+                secretKeyRef:
+                  key: access-key-secret
+                  name: aliyun
           ports:
           - containerPort: 8080
             name: micro

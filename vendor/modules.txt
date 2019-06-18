@@ -1,0 +1,211 @@
+# github.com/aliyun/alibaba-cloud-sdk-go v0.0.0-20190617064152-6aeaab912232
+github.com/aliyun/alibaba-cloud-sdk-go/sdk
+github.com/aliyun/alibaba-cloud-sdk-go/sdk/requests
+github.com/aliyun/alibaba-cloud-sdk-go/sdk/auth
+github.com/aliyun/alibaba-cloud-sdk-go/sdk/auth/credentials
+github.com/aliyun/alibaba-cloud-sdk-go/sdk/auth/credentials/provider
+github.com/aliyun/alibaba-cloud-sdk-go/sdk/endpoints
+github.com/aliyun/alibaba-cloud-sdk-go/sdk/errors
+github.com/aliyun/alibaba-cloud-sdk-go/sdk/responses
+github.com/aliyun/alibaba-cloud-sdk-go/sdk/utils
+github.com/aliyun/alibaba-cloud-sdk-go/sdk/auth/signers
+# github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da
+github.com/armon/go-metrics
+# github.com/go-log/log v0.1.0
+github.com/go-log/log
+github.com/go-log/log/log
+# github.com/golang/protobuf v1.3.1
+github.com/golang/protobuf/proto
+github.com/golang/protobuf/ptypes
+github.com/golang/protobuf/ptypes/any
+github.com/golang/protobuf/ptypes/duration
+github.com/golang/protobuf/ptypes/timestamp
+# github.com/gomsa/tools v0.0.0-20190615000832-56bbd6704f6b
+github.com/gomsa/tools/config
+github.com/gomsa/tools/env
+# github.com/google/btree v0.0.0-20180813153112-4030bb1f1f0c
+github.com/google/btree
+# github.com/google/uuid v1.1.1
+github.com/google/uuid
+# github.com/hashicorp/consul/api v1.1.0
+github.com/hashicorp/consul/api
+github.com/hashicorp/consul/api/watch
+# github.com/hashicorp/errwrap v1.0.0
+github.com/hashicorp/errwrap
+# github.com/hashicorp/go-cleanhttp v0.5.1
+github.com/hashicorp/go-cleanhttp
+# github.com/hashicorp/go-immutable-radix v1.0.0
+github.com/hashicorp/go-immutable-radix
+# github.com/hashicorp/go-msgpack v0.5.3
+github.com/hashicorp/go-msgpack/codec
+# github.com/hashicorp/go-multierror v1.0.0
+github.com/hashicorp/go-multierror
+# github.com/hashicorp/go-rootcerts v1.0.0
+github.com/hashicorp/go-rootcerts
+# github.com/hashicorp/go-sockaddr v1.0.1
+github.com/hashicorp/go-sockaddr
+# github.com/hashicorp/golang-lru v0.5.0
+github.com/hashicorp/golang-lru/simplelru
+# github.com/hashicorp/memberlist v0.1.4
+github.com/hashicorp/memberlist
+# github.com/hashicorp/serf v0.8.2
+github.com/hashicorp/serf/coordinate
+# github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
+github.com/jmespath/go-jmespath
+# github.com/json-iterator/go v1.1.6
+github.com/json-iterator/go
+# github.com/micro/cli v0.2.0
+github.com/micro/cli
+# github.com/micro/go-grpc v0.11.0
+github.com/micro/go-grpc
+github.com/micro/go-grpc/broker
+github.com/micro/go-grpc/client
+github.com/micro/go-grpc/server
+# github.com/micro/go-log v0.1.0
+github.com/micro/go-log
+# github.com/micro/go-micro v1.6.0
+github.com/micro/go-micro
+github.com/micro/go-micro/util/log
+github.com/micro/go-micro/client
+github.com/micro/go-micro/server
+github.com/micro/go-micro/broker
+github.com/micro/go-micro/cmd
+github.com/micro/go-micro/metadata
+github.com/micro/go-micro/registry
+github.com/micro/go-micro/selector
+github.com/micro/go-micro/transport
+github.com/micro/go-micro/codec
+github.com/micro/go-micro/codec/bytes
+github.com/micro/go-micro/codec/grpc
+github.com/micro/go-micro/codec/json
+github.com/micro/go-micro/codec/jsonrpc
+github.com/micro/go-micro/codec/proto
+github.com/micro/go-micro/codec/protorpc
+github.com/micro/go-micro/errors
+github.com/micro/go-micro/server/debug
+github.com/micro/go-micro/util/addr
+github.com/micro/go-micro/registry/cache
+github.com/micro/go-micro/util/net
+github.com/micro/go-micro/util/tls
+github.com/micro/go-micro/broker/http
+github.com/micro/go-micro/broker/memory
+github.com/micro/go-micro/broker/nats
+github.com/micro/go-micro/registry/consul
+github.com/micro/go-micro/registry/gossip
+github.com/micro/go-micro/registry/mdns
+github.com/micro/go-micro/registry/memory
+github.com/micro/go-micro/selector/dns
+github.com/micro/go-micro/selector/static
+github.com/micro/go-micro/transport/grpc
+github.com/micro/go-micro/transport/http
+github.com/micro/go-micro/transport/memory
+github.com/micro/go-micro/server/debug/proto
+github.com/micro/go-micro/registry/gossip/proto
+github.com/micro/go-micro/transport/grpc/proto
+# github.com/micro/go-plugins v0.24.1
+github.com/micro/go-plugins/registry/kubernetes
+github.com/micro/go-plugins/selector/static
+github.com/micro/go-plugins/client/grpc
+github.com/micro/go-plugins/server/grpc
+github.com/micro/go-plugins/registry/kubernetes/client
+github.com/micro/go-plugins/registry/kubernetes/client/watch
+github.com/micro/go-plugins/broker/grpc
+github.com/micro/go-plugins/registry/kubernetes/client/api
+github.com/micro/go-plugins/broker/grpc/proto
+# github.com/micro/go-rcache v0.1.0
+github.com/micro/go-rcache
+# github.com/micro/kubernetes v0.7.0
+github.com/micro/kubernetes/go/micro
+# github.com/micro/mdns v0.1.0
+github.com/micro/mdns
+# github.com/micro/util v0.1.0
+github.com/micro/util/go/lib/addr
+github.com/micro/util/go/lib/grpc
+github.com/micro/util/go/lib/net
+github.com/micro/util/go/lib/tls
+# github.com/miekg/dns v1.1.4
+github.com/miekg/dns
+# github.com/mitchellh/go-homedir v1.1.0
+github.com/mitchellh/go-homedir
+# github.com/mitchellh/hashstructure v1.0.0
+github.com/mitchellh/hashstructure
+# github.com/mitchellh/mapstructure v1.1.2
+github.com/mitchellh/mapstructure
+# github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+github.com/modern-go/concurrent
+# github.com/modern-go/reflect2 v1.0.1
+github.com/modern-go/reflect2
+# github.com/nats-io/nats.go v1.8.1
+github.com/nats-io/nats.go
+github.com/nats-io/nats.go/encoders/builtin
+github.com/nats-io/nats.go/util
+# github.com/nats-io/nkeys v0.0.2
+github.com/nats-io/nkeys
+# github.com/nats-io/nuid v1.0.1
+github.com/nats-io/nuid
+# github.com/pkg/errors v0.8.1
+github.com/pkg/errors
+# github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529
+github.com/sean-/seed
+# golang.org/x/crypto v0.0.0-20190605123033-f99c8df09eb5
+golang.org/x/crypto/ed25519
+golang.org/x/crypto/ed25519/internal/edwards25519
+# golang.org/x/net v0.0.0-20190613194153-d28f0bde5980
+golang.org/x/net/context
+golang.org/x/net/http2
+golang.org/x/net/http2/h2c
+golang.org/x/net/http/httpguts
+golang.org/x/net/http2/hpack
+golang.org/x/net/idna
+golang.org/x/net/ipv4
+golang.org/x/net/ipv6
+golang.org/x/net/trace
+golang.org/x/net/bpf
+golang.org/x/net/internal/iana
+golang.org/x/net/internal/socket
+golang.org/x/net/internal/timeseries
+# golang.org/x/sys v0.0.0-20190412213103-97732733099d
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2
+golang.org/x/text/secure/bidirule
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
+golang.org/x/text/transform
+# google.golang.org/genproto v0.0.0-20190201180003-4b09977fb922
+google.golang.org/genproto/googleapis/rpc/status
+# google.golang.org/grpc v1.21.1
+google.golang.org/grpc
+google.golang.org/grpc/credentials
+google.golang.org/grpc/peer
+google.golang.org/grpc/encoding
+google.golang.org/grpc/metadata
+google.golang.org/grpc/status
+google.golang.org/grpc/codes
+google.golang.org/grpc/balancer
+google.golang.org/grpc/balancer/roundrobin
+google.golang.org/grpc/connectivity
+google.golang.org/grpc/encoding/proto
+google.golang.org/grpc/grpclog
+google.golang.org/grpc/internal
+google.golang.org/grpc/internal/backoff
+google.golang.org/grpc/internal/balancerload
+google.golang.org/grpc/internal/binarylog
+google.golang.org/grpc/internal/channelz
+google.golang.org/grpc/internal/envconfig
+google.golang.org/grpc/internal/grpcrand
+google.golang.org/grpc/internal/grpcsync
+google.golang.org/grpc/internal/transport
+google.golang.org/grpc/keepalive
+google.golang.org/grpc/naming
+google.golang.org/grpc/resolver
+google.golang.org/grpc/resolver/dns
+google.golang.org/grpc/resolver/passthrough
+google.golang.org/grpc/stats
+google.golang.org/grpc/tap
+google.golang.org/grpc/credentials/internal
+google.golang.org/grpc/balancer/base
+google.golang.org/grpc/binarylog/grpc_binarylog_v1
+google.golang.org/grpc/internal/syscall
+# gopkg.in/ini.v1 v1.42.0
+gopkg.in/ini.v1
