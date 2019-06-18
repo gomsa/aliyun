@@ -18,7 +18,7 @@ func main() {
 	)
 	srv.Init()
 
-	// 用户服务实现
+	// aliyun服务实现
 	pb.RegisterAliyunHandler(srv.Server(), &hander.Aliyun{
 		RegionId:     	 env.Getenv("REGION_ID","default"),
 		AccessKeyId:     env.Getenv("ACCESS_KEY_ID",""),
