@@ -9,14 +9,14 @@ service Aliyun {
 
 
 message Request{
-    string method = 1;
-    string scheme = 2;
-    string domain = 3;
-    string version = 5;
-    string api_name = 6;
-    map<string, string> query_params = 7;
+    string Method = 1;
+    string Scheme = 2;
+    string Domain = 3;
+    string Version = 5;
+    string ApiName = 6;
+    map<string, string> QueryParams = 7;
 }
 
 message Response {
-    string content = 1;
+    string Content = 1;
 }
