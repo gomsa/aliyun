@@ -12,7 +12,7 @@ stages:
 - name: Publish
   steps:
   - publishImageConfig:
-      dockerfilePath: ./Dockerfile
+      dockerfilePath: ./rancher/Dockerfile
       buildContext: .
       tag: aliyun:${CICD_EXECUTION_SEQUENCE}
 - name: Deploy
