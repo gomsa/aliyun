@@ -23,33 +23,27 @@ github.com/golang/protobuf/ptypes/timestamp
 # github.com/gomsa/tools v0.0.0-20190615000832-56bbd6704f6b
 github.com/gomsa/tools/config
 github.com/gomsa/tools/env
+github.com/gomsa/tools/k8s/client
 # github.com/google/btree v0.0.0-20180813153112-4030bb1f1f0c
 github.com/google/btree
 # github.com/google/uuid v1.1.1
 github.com/google/uuid
 # github.com/hashicorp/consul/api v1.1.0
-github.com/hashicorp/consul/api
 github.com/hashicorp/consul/api/watch
 # github.com/hashicorp/errwrap v1.0.0
 github.com/hashicorp/errwrap
-# github.com/hashicorp/go-cleanhttp v0.5.1
-github.com/hashicorp/go-cleanhttp
 # github.com/hashicorp/go-immutable-radix v1.0.0
 github.com/hashicorp/go-immutable-radix
 # github.com/hashicorp/go-msgpack v0.5.3
 github.com/hashicorp/go-msgpack/codec
 # github.com/hashicorp/go-multierror v1.0.0
 github.com/hashicorp/go-multierror
-# github.com/hashicorp/go-rootcerts v1.0.0
-github.com/hashicorp/go-rootcerts
 # github.com/hashicorp/go-sockaddr v1.0.1
 github.com/hashicorp/go-sockaddr
 # github.com/hashicorp/golang-lru v0.5.0
 github.com/hashicorp/golang-lru/simplelru
 # github.com/hashicorp/memberlist v0.1.4
 github.com/hashicorp/memberlist
-# github.com/hashicorp/serf v0.8.2
-github.com/hashicorp/serf/coordinate
 # github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
 github.com/jmespath/go-jmespath
 # github.com/json-iterator/go v1.1.6
@@ -105,13 +99,13 @@ github.com/micro/go-micro/transport/grpc/proto
 # github.com/micro/go-plugins v0.24.1
 github.com/micro/go-plugins/registry/kubernetes
 github.com/micro/go-plugins/selector/static
+github.com/micro/go-plugins/broker/grpc
 github.com/micro/go-plugins/client/grpc
 github.com/micro/go-plugins/server/grpc
 github.com/micro/go-plugins/registry/kubernetes/client
 github.com/micro/go-plugins/registry/kubernetes/client/watch
-github.com/micro/go-plugins/broker/grpc
-github.com/micro/go-plugins/registry/kubernetes/client/api
 github.com/micro/go-plugins/broker/grpc/proto
+github.com/micro/go-plugins/registry/kubernetes/client/api
 # github.com/micro/go-rcache v0.1.0
 github.com/micro/go-rcache
 # github.com/micro/kubernetes v0.7.0
@@ -120,13 +114,11 @@ github.com/micro/kubernetes/go/micro
 github.com/micro/mdns
 # github.com/micro/util v0.1.0
 github.com/micro/util/go/lib/addr
-github.com/micro/util/go/lib/grpc
 github.com/micro/util/go/lib/net
 github.com/micro/util/go/lib/tls
+github.com/micro/util/go/lib/grpc
 # github.com/miekg/dns v1.1.4
 github.com/miekg/dns
-# github.com/mitchellh/go-homedir v1.1.0
-github.com/mitchellh/go-homedir
 # github.com/mitchellh/hashstructure v1.0.0
 github.com/mitchellh/hashstructure
 # github.com/mitchellh/mapstructure v1.1.2
@@ -177,11 +169,11 @@ google.golang.org/genproto/googleapis/rpc/status
 # google.golang.org/grpc v1.21.1
 google.golang.org/grpc
 google.golang.org/grpc/credentials
-google.golang.org/grpc/peer
 google.golang.org/grpc/encoding
 google.golang.org/grpc/metadata
 google.golang.org/grpc/status
 google.golang.org/grpc/codes
+google.golang.org/grpc/peer
 google.golang.org/grpc/balancer
 google.golang.org/grpc/balancer/roundrobin
 google.golang.org/grpc/connectivity
