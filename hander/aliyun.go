@@ -23,6 +23,7 @@ func (srv *Aliyun) ProcessCommonRequest(ctx context.Context, req *pb.Request, re
 	client, err := sdk.NewClientWithAccessKey(srv.RegionId, srv.AccessKeyId, srv.AccessKeySecret)
 	if err != nil {
 		log.Log(err)
+		return err
 	}
 	// 配置参数
 	request := requests.NewCommonRequest()
@@ -37,6 +38,7 @@ func (srv *Aliyun) ProcessCommonRequest(ctx context.Context, req *pb.Request, re
 	response, err := client.ProcessCommonRequest(request)
 	if err != nil {
 		log.Log(err)
+		return err
 	}
 	// 返回请求数据
 	res.Content = response.GetHttpContentString()
